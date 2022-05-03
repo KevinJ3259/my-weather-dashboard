@@ -9,13 +9,13 @@ Description:
 Password Generator Challenge refactor assignment
 
 Deployment:
-Update links GitHub Repo [GitHub] https://github.com/KevinJ3259/Password-Generator-Challenge-2022 
-GitHub Pages https://kevinj3259.github.io/Password-Generator-Challenge-2022/
+Update links GitHub Repo [GitHub] https://github.com/KevinJ3259/my-weather-dashboard 
+GitHub Pages https://kevinj3259.github.io/my-weather-dashboard/
 
 Installation:
 No installation is needed
-You may view the code on [GitHub] https://github.com/KevinJ3259/Password-Generator-Challenge-2022
-To view the site on GitHub Pages https://kevinj3259.github.io/Password-Generator-Challenge-2022/
+You may view the code on [GitHub]  https://github.com/KevinJ3259/my-weather-dashboard 
+To view the site on GitHub Pages https://kevinj3259.github.io/my-weather-dashboard/
 License:
 MIT License
 
