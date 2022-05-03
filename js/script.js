@@ -10,7 +10,7 @@ const getForecast = (searchValue) => {
   if (!searchValue) {
     return;
   }
-  var endpoint = `http://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
+  var endpoint = `https://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
 
   fetch(endpoint)
     .then((res) => res.json())
@@ -62,7 +62,7 @@ const getForecast = (searchValue) => {
 };
 
 const getUv = (lat, lon) => {
-  fetch(`http://api.openweathermap.org/data/2.5/uvi?appid=d91f911bcf2c0f925fb6535547a5ddc9&lat=${lat}&lon=${lon}`)
+  fetch(`https://api.openweathermap.org/data/2.5/uvi?appid=d91f911bcf2c0f925fb6535547a5ddc9&lat=${lat}&lon=${lon}`)
     .then((results) => results.json())
     .then((data) => {
       let bodyEl = document.querySelector(".card-body");
@@ -99,7 +99,7 @@ const handleHistory = (term) => {
 };
 
 const searchWeather = (searchValue) => {
-  let endpoint = `http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
+  let endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=d91f911bcf2c0f925fb6535547a5ddc9&units=imperial`;
   fetch(endpoint)
     .then((res) => res.json())
     .then((data) => {
