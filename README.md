@@ -12,6 +12,8 @@ Deployment:
 Update links GitHub Repo [GitHub] https://github.com/KevinJ3259/my-weather-dashboard 
 GitHub Pages https://kevinj3259.github.io/my-weather-dashboard/
 
+
+
 Installation:
 No installation is needed
 You may view the code on [GitHub]  https://github.com/KevinJ3259/my-weather-dashboard 
