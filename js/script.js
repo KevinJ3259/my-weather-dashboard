@@ -70,7 +70,7 @@ const getUv = (lat, lon) => {
       uvEl.id = "uv";
       uvEl.textContent = "UV Index";
       let btnEl = document.createElement("span");
-      btnEl.classList.add("btn", "btn-md","ml-2");
+      btnEl.classList.add("btn", "btn-md", "ml-2");
       btnEl.innerHTML = data.value;
 
       switch (data.value) {
@@ -163,17 +163,15 @@ if (existingHistory && existingHistory.length > 0) {
   existingHistory.forEach((item) => makeRow(item));
 }
 const getSearchValue = (event) => {
-  console.log(event);
   event.preventDefault();
 
   // let searchValue = document.querySelector("#search-value").value;
   let searchValue = event.target.elements.search_value.value;
 
   if (searchValue) {
+    document.querySelector("#search-value").value = "";
     searchWeather(searchValue);
     makeRow(searchValue);
-    // document.querySelector("#search-value").value = "";
-    event.target.elements.search_value.value = "";
   }
 };
 
@@ -182,7 +180,7 @@ window.addEventListener("load", function () {
   let form = document.querySelector("#frm_location_query");
   if (!form) alert("form not found");
 
-  form.setAttribute("onsubmit",  "getSearchValue(event)");
+  form.setAttribute("onsubmit", "getSearchValue(event)");
 });
 
 function updateSearch(/**@type String*/ location_query) {
